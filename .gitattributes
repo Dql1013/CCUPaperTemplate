@@ -1,0 +1,19 @@
+# 统一换行符为 LF
+* text=auto
+
+# TeX 源文件
+*.tex text diff=tex eol=lf
+*.cls text diff=tex eol=lf
+*.sty text diff=tex eol=lf
+*.bst text diff=tex eol=lf
+*.bib text diff=bibtex eol=lf
+
+# 图片 (二进制)
+*.png binary
+*.jpg binary
+*.jpeg binary
+
+# 配置文件
+*.json text eol=lf
+*.cfg text eol=lf
+*.md text eol=lf

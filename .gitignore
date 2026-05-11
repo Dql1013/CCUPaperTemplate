@@ -1,0 +1,71 @@
+# ===== LaTeX 编译产物 =====
+*.aux
+*.bbl
+*.blg
+*.brf
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.ist
+*.fls
+*.fdb_latexmk
+*.synctex
+*.synctex.gz
+*.synctex(busy)
+*.nav
+*.snm
+*.vrb
+*.bcf
+*.run.xml
+*.blx.bib
+*.xdv
+*.thm
+
+# ===== 编译 PDF 输出 =====
+*.pdf
+
+# ===== LaTeX 辅助文件 =====
+_minted*/
+*_minted-*/
+*.pyg
+*.spl
+*.mw
+auto/
+
+# ===== 编辑器/IDE =====
+*.bak
+*.sav
+*.backup
+*.swp
+*~
+\#*\#
+.latexmkrc
+
+# ===== 操作系统 =====
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# ===== 字体文件 (过大，不入 Git) =====
+# Windows 用户系统已自带这些字体，其他系统请参见 Fonts/README.md
+Fonts/*.ttf
+Fonts/*.ttc
+Fonts/*.otf
+Fonts/*.TTF
+Fonts/*.TTC
+Fonts/*.OTF
+
+# ===== 个人论文文件 (请勿提交) =====
+# 你自己的 .tex 论文文件，同步前请添加到 .gitignore
+# 或使用 template.tex 作为起点
