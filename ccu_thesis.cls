@@ -113,6 +113,18 @@
 \newcommand{\instructor}[1]{\def \@instructor {#1}}
 \newcommand{\entitle}[1]{\def \@entitle {#1}}
 \newcommand{\thesistime}[3]{\def \@dateyear{#1} \def \@datemonth{#2} \def \@dateday{#3}}
+\newcommand{\ccucovertitlesep}{\hspace{0.85em}}
+\newcommand{\ccucovertitleline}[4]{#1\ccucovertitlesep#2\ccucovertitlesep#3\ccucovertitlesep#4}
+\newcommand{\ccucovertitle}{
+    \begingroup
+    \renewcommand{\arraystretch}{1}
+    \songti\bfseries\fontsize{42bp}{42bp}\selectfont
+    \begin{tabular}{@{}c@{}}
+        \ccucovertitleline{长}{春}{大}{学} \\[0.55cm]
+        \ccucovertitleline{毕}{业}{论}{文}
+    \end{tabular}
+    \endgroup
+}
 
 % ============= 5. 页面样式与装订线 =============
 \newcommand{\makebindingline}{
@@ -150,11 +162,11 @@
         \pagestyle{empty} 
         \begin{flushright} {\heiti\bfseries\wuhao 学号：}\underline{\makebox[3.2cm][c]{\textnormal{\@stunum}}} \end{flushright}
         \vspace{0.1cm} \noindent \hspace{1em} \includegraphics[width=7.45cm, height=2.44cm]{CcuTitle.png} \\
-        \vspace{1.5cm} 
+        \vspace{1.0cm} 
         \begin{center}
-            {\bfseries\fontsize{26bp}{30bp}\selectfont 长\hspace{0.5em}春\hspace{0.5em}大\hspace{0.5em}学\hspace{0.5em}毕\hspace{0.5em}业\hspace{0.5em}设\hspace{0.5em}计} \\
-            \vspace{2.2cm} {\heiti\fontsize{18bp}{20bp}\selectfont \@title} \\
-            \vspace{2.0cm}
+            \ccucovertitle \\
+            \vspace{0.9cm} {\heiti\fontsize{18bp}{20bp}\selectfont \@title} \\
+            \vspace{1.4cm}
             {\sihao\songti \renewcommand\arraystretch{1.3} 
                 \begin{tabular}{l @{\hspace{1em}} >{\centering\arraybackslash}p{6.89cm}}
                     \makebox[2.12cm][s]{\bfseries 姓\hspace{2em} 名} & {\bfseries\@author} \\ \cline{2-2}
